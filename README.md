@@ -1,6 +1,6 @@
 # Registration and Login System with JWT
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/gustavoh430/loginproject/blob/add-license-1/LICENCE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/gustavoh430/loginproject/blob/main/LICENCE) 
 
 ![Header](./github-header-image.png)
 
