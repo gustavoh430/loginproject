@@ -1,7 +1,12 @@
-# loginproject
-Login system using JWT, MySQL, Maven and Spring
+# Registration and Login System with JWT
 
-![Header](./your-header-image-name.png)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/gustavoh430/loginproject/blob/add-license-1/LICENCE) 
+
+![Header](./github-header-image.png)
+
+I have been learning Java and some technologies lately. 
+
+Nowadays, I work with SRE and Observability, but I'm trying to expand my view in the developing field. So as a first project, I will be creating a Registration and Login system using Spring as framework, Maven as repository manager, MySQL as database and, finally, JwT as authorization token.
 
 
 
