@@ -232,6 +232,8 @@ The general schema of how it works is showed below:
 However, to understand what has been done in this project completely, we must get our head around how it is related to the Spring Security and where it belongs in the schema showed before.
 
 
+
+
 ## SpringSecurity + JWT
 
 Now we can understand how JWT and Spring Security work together.As seen in the image below, we create a class representing the jwtFilter that will be part of the Spring Security filters. Then, there will also be a JwTProvider as a custom authentication provider.
@@ -243,6 +245,8 @@ These implemented steps will be enough to repond an authentication with a JwT to
 
 
 
+
+
 #  HTTP Response code and Exception Handling Messages
 
 An effort has been made to treat most of the exceptions that could ocorrur. Furthermore, the http response codes have been thought to be as descriptive as possible. 
@@ -250,22 +254,7 @@ An effort has been made to treat most of the exceptions that could ocorrur. Furt
 
 ## Response codes
 
-You will be seeing these response codes throughout the project
-
-
-```json
-"HTTP Response Code 401 - Not Authorized"
-"HTTP Response Code 500 - Internal Server Error"
-"HTTP Response Code 406 - Not Acceptable"
-"HTTP Response Code 409 - Conflict"
-"HTTP Response Code 404 - Not Found"
-"HTTP Response Code 200 - OK"
-
-```
-
-## Response codes
-
-You will be seeing these response codes throughout the project
+You will be seeing these response codes throughout the project:
 
 
 ```json
@@ -280,7 +269,7 @@ You will be seeing these response codes throughout the project
 
 ## Exception Handling Messages
 
-Most of the errors will be presented like te HTTP Error Message below:
+Most of the errors will be presented like the HTTP Error Message below:
 
 ```json
 {
@@ -318,6 +307,7 @@ Nowadays, I am widening my view of Software Engineering. Part of this effort is 
 
 Contacts:
 Email: gustavoh430@gmail.com
+
 Linkedin: https://www.linkedin.com/in/gustavohgodinho/
 
 
