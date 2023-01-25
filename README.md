@@ -233,3 +233,12 @@ However, to understand what has been done in this project completely, we must ge
 
 
 ## SpringSecurity + JWT
+
+Now we can understand how JWT and Spring Security work together.As seen in the image below, we create a class representing the jwtFilter that will be part of the Spring Security filters. Then, there will also be a JwTProvider as a custom authentication provider.
+
+These implemented steps will be enough to repond an authentication with a JwT token.
+
+
+![Header](https://github.com/gustavoh430/loginproject/blob/main/JWT%20%2B%20SpringSecurity.png)
+
+
