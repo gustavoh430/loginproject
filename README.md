@@ -3,6 +3,12 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/gustavoh430/loginproject/blob/main/LICENCE) 
 
 
+
+![Header](https://github.com/gustavoh430/loginproject/blob/main/Technologies%20Used.PNG)
+
+
+
+
 ## What's in the box?
 
 This project has been built up based on Logical layers of a Web Service as follows:
