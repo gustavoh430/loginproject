@@ -209,7 +209,7 @@ public class UsersService {
 
 It has been used the SpringSecurity framework to make the access secure. Below, there is an schema of how this framework works.
 
-First of all, the income HTTP requests will be filtered. There are a bunch of filters we can apply. Clearly, it will depend on which kind of operation we want to do.
+First of all, the income HTTP requests will be filtered. There are a bunch of filters we can implement. Clearly, it will depend on which kind of operation we want to do.
 But as example of this, we can decide which endpoints will be accessible to each user role. We can also decide if people must be logged in to have certain access.
 
 After hiting all of the filters applied, the Authentication Manager will be called. Its responsibility is to go through all of the providers trying to authenticate the users. Hence, the providers are supposed to fetch users by communicating with User Details Service and return success state if the user exist with given credential. These users will be fetched from the MySQL database, in this case.
