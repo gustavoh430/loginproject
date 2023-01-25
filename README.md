@@ -215,6 +215,7 @@ But as example of this, we can decide which endpoints will be accessible to each
 After hiting all of the filters applied, the Authentication Manager will be called. Its responsibility is to go through all of the providers trying to authenticate the users. Hence, the providers are supposed to fetch users by communicating with User Details Service and return success state if the user exist with given credential. These users will be fetched from the MySQL database, in this case.
 
 ![Header](https://github.com/gustavoh430/loginproject/blob/main/Spring%20Security%20Schema.png)
+(Source: https://backendstory.com/spring-security-authentication-architecture-explained-in-depth/)
 
 
 
@@ -226,7 +227,8 @@ It is usually used during authentication. Once the user has already proven he ca
 The general schema of how it works is showed below:
 
 ![image](https://user-images.githubusercontent.com/41215245/214250247-19335bda-0345-4e98-8de7-db7bf9652292.png)
-(Image Source: https://metamug.com/article/security/jwt-java-tutorial-create-verify.html)
+(Source: https://metamug.com/article/security/jwt-java-tutorial-create-verify.html)
+
 
 
 However, to understand what has been done in this project completely, we must get our head around how it is related to the Spring Security and where it belongs in the schema showed before.
@@ -242,6 +244,7 @@ These implemented steps will be enough to repond an authentication with a JwT to
 
 
 ![Header](https://github.com/gustavoh430/loginproject/blob/main/JWT%20%2B%20SpringSecurity.png)
+(Source: https://backendstory.com/spring-security-authentication-architecture-explained-in-depth/)
 
 
 
