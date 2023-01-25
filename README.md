@@ -2,12 +2,6 @@
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/gustavoh430/loginproject/blob/main/LICENCE) 
 
-![Header](./github-header-image.png)
-
-I have been learning Java and some technologies lately. 
-
-Nowadays, I work with SRE and Observability, but I'm trying to expand my view in the developing field. So as a first project, I will be creating a Registration and Login system using Spring as framework, Maven as repository manager, MySQL as database and, finally, JwT as authorization token.
-
 
 ## What's in the box?
 
@@ -15,7 +9,8 @@ This project has been built up based on Logical layers of a Web Service as follo
 
 ![Header](https://github.com/gustavoh430/loginproject/blob/main/ServiceLayer.drawio.png)
 
-This is a registration and login system using JWT to authenticate. It has got one service layer that includes all operations available, that are: Sign in, Sign up, User Information and User Role Setting up resource.
+This is a registration and login system using JWT to authenticate. It has got one Controller layer that includes all operations available, that are: Sign in, Sign up, User Information and User Role Setting up resource.
+There will be a service layer which will orchestrate all service callings between the controllers and the database repository. Of course, I could just call the repository directly through the Controller, but I thought it would be most suitable, for this case, to create an intermediate class. This class is responsible for containing all businesses rules.
 
 
 ### Sign Up Endpoint
@@ -39,6 +34,27 @@ This is a registration and login system using JWT to authenticate. It has got on
 "User registered successfully"
 ```
 
+
+### Sign In Endpoint
+```text
+/login/signin
+```
+
+### Sign In Payload
+```json
+{
+    "email": "gustavoh430@gmail.com",
+    "password": "teste123"
+}
+```
+
+### Sign In Response
+```json
+{
+    "accessToken": "<ACCESS_TOKEN>",
+    "tokenType": "Bearer "
+}
+```
 
 ## JWT
 Jason Web Token, also known as JWT, is a token digitally assigned to assure secure information transmission.
