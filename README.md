@@ -214,7 +214,7 @@ But as example of this, we can decide which endpoints will be accessible to each
 
 After hiting all of the filters applied, the Authentication Manager will be called. Its responsibility is to go through all of the providers trying to authenticate the users. Hence, the providers are supposed to fetch users by communicating with User Details Service and return success state if the user exist with given credential. These users will be fetched from the MySQL database, in this case.
 
-![Header](https://github.com/gustavoh430/loginproject/blob/main/Spring%20Web%20Securiy.png)
+![Header](https://github.com/gustavoh430/loginproject/blob/main/Spring%20Security%20Schema.png)
 
 
 
@@ -240,5 +240,84 @@ These implemented steps will be enough to repond an authentication with a JwT to
 
 
 ![Header](https://github.com/gustavoh430/loginproject/blob/main/JWT%20%2B%20SpringSecurity.png)
+
+
+
+#  HTTP Response code and Exception Handling Messages
+
+An effort has been made to treat most of the exceptions that could ocorrur. Furthermore, the http response codes have been thought to be as descriptive as possible. 
+
+
+## Response codes
+
+You will be seeing these response codes throughout the project
+
+
+```json
+"HTTP Response Code 401 - Not Authorized"
+"HTTP Response Code 500 - Internal Server Error"
+"HTTP Response Code 406 - Not Acceptable"
+"HTTP Response Code 409 - Conflict"
+"HTTP Response Code 404 - Not Found"
+"HTTP Response Code 200 - OK"
+
+```
+
+## Response codes
+
+You will be seeing these response codes throughout the project
+
+
+```json
+"HTTP Response Code 401 - Not Authorized"
+"HTTP Response Code 500 - Internal Server Error"
+"HTTP Response Code 406 - Not Acceptable"
+"HTTP Response Code 409 - Conflict"
+"HTTP Response Code 404 - Not Found"
+"HTTP Response Code 200 - OK"
+
+```
+
+## Exception Handling Messages
+
+Most of the errors will be presented like te HTTP Error Message below:
+
+```json
+{
+    "timestamp": "<TIMESTAMP>",
+    "status": <HTTP_RESPONSE_CODE>,
+    "error": "<HTTP_RESPONSE_ERROR>",
+    "message": "<HTTP_RESPONSE_MESSAGE>",
+    "path": "<PATH>"
+}
+
+```
+
+A example of that is:
+
+```json
+{
+    "timestamp": "2023-01-25T14:03:58.979857100Z",
+    "status": 406,
+    "error": "Empty Fields",
+    "message": "The following field cannot be empty: Name",
+    "path": "/login/signup"
+}
+
+```
+
+
+# Author
+
+Hi, I'm Gustavo!
+
+I have been working as an SRE & Observability Analyst for one year already. As most of SREs, I work analyzing infraestructure and services in a massive Cloud based ecosystem, using traces, logs and metrics. 
+I'm very skilled at complex tasks operating Monitoring tools like Dynatrace, Splunk and Grafana. 
+
+Nowadays, I am widening my view of Software Engineering. Part of this effort is to learn java.
+
+Contacts:
+Email: gustavoh430@gmail.com
+Linkedin: https://www.linkedin.com/in/gustavohgodinho/
 
 
