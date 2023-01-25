@@ -283,7 +283,7 @@ Most of the errors will be presented like the HTTP Error Message below:
 ```json
 {
     "timestamp": "<TIMESTAMP>",
-    "status": <HTTP_RESPONSE_CODE>,
+    "status": "<HTTP_RESPONSE_CODE>",
     "error": "<HTTP_RESPONSE_ERROR>",
     "message": "<HTTP_RESPONSE_MESSAGE>",
     "path": "<PATH>"
