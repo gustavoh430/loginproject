@@ -24,6 +24,15 @@ public class Users implements UserDetails {
 	private String passwordConfirm;
 
 
+	public Users(Long id, String name, String age, String email, String password, String passwordConfirm, List<Role> roles) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.email = email;
+		this.password = password;
+		this.passwordConfirm = passwordConfirm;
+		this.roles = roles;
+	}
 
 	public Users() {
 	}
