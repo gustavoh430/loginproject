@@ -8,4 +8,17 @@ node {
         /* Push the container to the custom Registry */
         customImage.push()
     }
-}
+    stage('Test') {
+            steps {
+                sh './mvnw test'
+                // bat '.\\mvnw test'
+            }
+
+            post {
+                always {
+                    junit '**/target/TEST-*.xml'
+                }
+            }
+        }
+    }
+
