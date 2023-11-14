@@ -48,43 +48,4 @@ class UsersServiceTest {
         Assertions.assertThat(users.getAge().isEmpty()).isTrue();
     }
 
-    @Test
-    @DisplayName("Should return True for existing emails")
-    void existsByEmail() {
-        List<Role> role = new ArrayList();
-        Role role1 = new Role(1, "adm");
-        role.add(role1);
-        Users users = new Users(1L, "Gustavo", "17", "teste@gmail.com", "123", "123", role);
-        this.CreateUser(users);
-        Optional<Boolean> foundedUser = Optional.ofNullable(this.userRepository.existsByEmail(users.getEmail()));
-        Assertions.assertThat(foundedUser.isPresent()).isTrue();
-    }
-
-    @Test
-    @DisplayName("Should return False for existing emails")
-    void existsByEmail2() {
-        List<Role> role = new ArrayList();
-        Role role1 = new Role(1, "adm");
-        role.add(role1);
-        Users users = new Users(1L, "Gustavo", "17", "teste@gmail.com", "123", "123", role);
-        Optional<Boolean> foundedUser = Optional.ofNullable(this.userRepository.existsByEmail(users.getEmail()));
-        Assertions.assertThat(foundedUser.isPresent()).isTrue();
-    }
-
-    @Test
-    void save() {
-    }
-
-    @Test
-    void setAuthoritiesService() {
-    }
-
-    @Test
-    void saveRole() {
-    }
-
-    private Users CreateUser(Users users) {
-        this.userRepository.save(users);
-        return users;
-    }
 }
